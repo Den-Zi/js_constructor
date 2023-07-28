@@ -2,8 +2,7 @@
 
 import { row, col, css } from "../utils.js";
 export class Block {
-    constructor(type, value, options) {
-        this.type = type,
+    constructor( value, options) {
         this.value = value,
         this.options = options
     }
@@ -13,7 +12,7 @@ export class Block {
 }
 export class TitleBlock extends Block {
     constructor(value, options) {
-        super('titel', value, options)
+        super(value, options)
     }
 
     toHTML() {
@@ -24,7 +23,7 @@ export class TitleBlock extends Block {
 }
 export class TexteBlock extends Block {
     constructor(value, options) {
-        super('text', value, options)
+        super(value, options)
     }
 
     toHTML() {
@@ -34,7 +33,7 @@ export class TexteBlock extends Block {
 }
 export class ColumsBlock extends Block {
     constructor(value, options) {
-        super('colums', value, options)
+        super(value, options)
     }
 
     toHTML() {
@@ -45,7 +44,7 @@ export class ColumsBlock extends Block {
 }
 export class ImgeBlock extends Block {
     constructor(value, options) {
-        super('img', value, options)
+        super(value, options)
     }
 
     toHTML() {
