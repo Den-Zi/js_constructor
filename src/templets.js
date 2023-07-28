@@ -1,6 +1,9 @@
 
+import { row, col } from "./utils.js";
+function titel(block) {
+    
+    // return row(col(block.value));
 
-export function titel(block) {
     return `
     <div class="row">
     <div class="col-sm">
@@ -8,7 +11,7 @@ export function titel(block) {
     </div>
 </div>`;
 }
-export function text(block) {
+function text(block) {
     return `
     <div class="row">
     <div class="col-sm">
@@ -16,12 +19,19 @@ export function text(block) {
     </div>
 </div>`;
 }
-export function colums(block) {
+function colums(block) {
 
     let html = block.value.map(item => `<div class="col-sm">${item}</div>`);
 
     return `<div class="row">${html.join('')}</div>`;
 }
-export function img(block) {
+function img(block) {
     return `<div class="row"><img src='${block.value}' alt =''></div>`
+}
+
+export const templets = {
+    titel,
+    text,
+    colums,
+    img
 }
