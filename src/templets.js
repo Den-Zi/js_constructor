@@ -1,32 +1,24 @@
 
 import { row, col } from "./utils.js";
-function titel(block) {
-    
-    // return row(col(block.value));
 
-    return `
-    <div class="row">
-    <div class="col-sm">
-        <h1>${block.value}</h1>
-    </div>
-</div>`;
+function titel(block) {
+
+    const {style, tag} = block.options
+    
+    
+    return row(col(`<${tag}>${block.value}</${tag}>`), style);
 }
 function text(block) {
-    return `
-    <div class="row">
-    <div class="col-sm">
-        <p>${block.value}</p>
-    </div>
-</div>`;
+    return row(col(`<p>${block.value}</p>`));
 }
 function colums(block) {
 
-    let html = block.value.map(item => `<div class="col-sm">${item}</div>`);
+    let html = block.value.map(col).join('');
 
-    return `<div class="row">${html.join('')}</div>`;
+    return row(html);
 }
 function img(block) {
-    return `<div class="row"><img src='${block.value}' alt =''></div>`
+    return row(`<img src='${block.value}' alt =''>`);
 }
 
 export const templets = {
@@ -35,3 +27,7 @@ export const templets = {
     colums,
     img
 }
+
+console.log('templets.js')
+
+console.log(row('ffdfdf'))

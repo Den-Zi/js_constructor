@@ -4,6 +4,7 @@ import { templets} from "./templets.js";
 
 
 
+
 const $site = document.querySelector('#site');
 
 
@@ -17,6 +18,6 @@ modal.forEach(block => {
 
 });
 
-
+console.log('index.js')
 
 

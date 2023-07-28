@@ -1,7 +1,14 @@
+
+//import img from './assets/img.jpg' // динмически создаваем путь д картинки
+
 export const modal = [
     {
         type: 'titel',
-        value: 'Hello Word from JS'
+        value: 'Hello Word from JS',
+        options: {
+            tag: 'h1',
+            style: 'background-color: black; font-size: 25px;'
+        }
     },
     {
         type: 'text',
@@ -18,7 +25,9 @@ export const modal = [
     },
     {
         type: 'img',
-        value: '/assets/img.jpg'
+        value: './assets/img.jpg'
     }
 
 ];
+
+console.log('model.js')

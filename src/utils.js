@@ -1,10 +1,16 @@
 
 
 
-export function row (content) {
-    rentun `<div class="row">${content}</div>`;
-};
+export function row (content, style) {
+    return `<div class="row" style="${style}">${content}</div>`;
+}
 
 export function col (content) {
-    rentun `<div class="col-sm">${content}</div>`;
-};
+    return `<div class="col-sm">${content}</div>`;
+}
+
+console.log('utilis.js')
+
+
+
+
