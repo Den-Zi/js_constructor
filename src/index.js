@@ -1,15 +1,13 @@
 import {modal} from "./model.js";
+import { Side } from "./classis/Side.js";
 // import './style/main.css' // так как пока не работаем с parcel
 
 
+const $site = new Side('#site');
+$site.toRender(modal);
 
 
-const $site = document.querySelector('#site');
 
-
-modal.forEach(block => {
-        $site.insertAdjacentHTML('beforeend', block.toHTML());
-});
 
 console.log('index.js')
 
