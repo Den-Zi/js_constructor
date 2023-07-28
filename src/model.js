@@ -15,7 +15,11 @@ export const modal = [
     },
     {
         type: 'text',
-        value: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfgfgfg hh66k6kk'
+        value: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfgfgfg hh66k6kk',
+        style: {
+            background: 'black;',
+            'font-size': '25px;'
+        }
     },
     {
         type: 'colums',
@@ -24,11 +28,19 @@ export const modal = [
             '2222222222',
             '33333333333',
             '4444444444444',
-        ]
+        ],
+        style: {
+            background: 'black;',
+            'font-size': '25px;'
+        }
     },
     {
         type: 'img',
-        value: './assets/img.jpg'
+        value: './assets/img.jpg',
+        style: {
+            background: 'black;',
+            'font-size': '25px;'
+        }
     }
 
 ];
