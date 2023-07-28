@@ -8,6 +8,7 @@ export class Side{
     }
 
     toRender(modal){
+        this.$sel.innerHTML = ''
         modal.forEach(block => {
             this.$sel.insertAdjacentHTML('beforeend', block.toHTML());
     });
