@@ -7,7 +7,10 @@ export const modal = [
         value: 'Hello Word from JS',
         options: {
             tag: 'h1',
-            style: 'background-color: black; font-size: 25px;'
+            style: {
+                background: 'black;',
+                'font-size': '25px;'
+            }
         }
     },
     {
